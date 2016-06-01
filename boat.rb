@@ -1,10 +1,11 @@
 class Boat
-  attr_accessor :size, :health, :position
+  attr_accessor :size, :health, :orientation
 
-  def initialize size
+  # orientation= :vertical | :horizontal
+  def initialize size, orientation: :vertical
     @size = size
     @health = size
-    @position = position
+    @orientation = orientation
   end
 
   # boat gets hit by a torpedo
