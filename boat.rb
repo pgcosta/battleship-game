@@ -10,8 +10,6 @@ class Boat
   # boat gets hit by a torpedo
   def take_hit
     @health -= 1
-  end
-
-  def position
+    @health
   end
 end

@@ -27,4 +27,12 @@ describe Boat do
     boat.take_hit
     expect(boat.health).to eq(1)
   end
+
+  it "should return available health after a hit" do
+    boat = Boat.new(3)
+
+    expect(boat.take_hit).to eq(2)
+
+    expect(boat.take_hit).to eq(1)
+  end
 end
