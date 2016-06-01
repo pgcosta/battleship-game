@@ -31,6 +31,11 @@ class Board
     end
   end
 
+  # mark a hit on the board
+  def mark_hit row, column
+
+  end
+
   private
 
   # checks if it is possible to place a boat on the board within the bounds
@@ -43,5 +48,9 @@ class Board
       return false if row + boat_size > BOARD_SIZE
     end
     true
+  end
+
+  # method to, given the coordinates of the shot, find the boar place in there
+  def find_boat row, columns
   end
 end
