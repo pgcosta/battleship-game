@@ -80,6 +80,9 @@ module Game
     player1 = Player.new
     player2 = Player.new
 
+    puts "Welcome! Board size: " + Board::BOARD_SIZE.to_s
+    puts "Please note that this is a Nerds board: coordinates range from 0 - " + (Board::BOARD_SIZE-1).to_s
+
     player1, player2 = Game.input_players(player1, player2)
     puts "#{player1.name}: input your boats:"
     player1 = Game.input_boats(player1)
@@ -103,6 +106,8 @@ module Game
     puts "Winner: " + winner(player1, player2).name
   end
 end
+
+Game::main_loop
 
 
 
