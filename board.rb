@@ -13,7 +13,7 @@ class Board
     height = BOARD_SIZE
     width = BOARD_SIZE
     # initialize a 2d array with all values set to 0
-    @grid = Array.new(height, NO_BOAT) { Array.new(width, NO_BOAT) }
+    @grid = Array.new(height) { Array.new(width, NO_BOAT) }
     @boats = []
   end
 
